@@ -12,7 +12,7 @@ public class Base62Util {
             sb.append(BASE62_CHARSET.charAt((int) (num % BASE)));
             num /= BASE;
         }
-        return sb.reverse().toString();
+        return String.valueOf(sb.reverse());
     }
 
     // Decode a Base62 string back into a number
